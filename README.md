@@ -15,8 +15,18 @@ Packer template files are written in json format.
 
 This is to ensure the template file is correct such that it has the correct Packer syntax.
 
+e.g.
 ```bash
 packer validate basic-image.json
+```
+
+### Build machine image
+
+Once validated, we can build the machine image using the validated template file.
+
+e.g.
+```bash
+packer build basic-image.json
 ```
 
 ### Basic AMI image
